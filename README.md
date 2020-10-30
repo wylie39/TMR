@@ -4,8 +4,8 @@ TMR or Tiny Message Recommender is a small package for recommending text from a 
 
 ## How to
 
-### install
-npm install @Wylie39/tmr
+### Install
+npm i @wylie39/tmr
 
 TMR takes a json object like the following:
 ```
