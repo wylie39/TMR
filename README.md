@@ -83,5 +83,5 @@ If no messages can be recommend it will return null
 The date is captured from the users computer and compared to the one in the json without time-zone checking.
 
 ## Tests
-Run NPM test to get a message from the above example.
+Run NPM test.
 
