@@ -9,7 +9,7 @@ TMR takes a json object like the following:
 {
     "id": A unique number for the message,
     "enabled": True or False should we show this message,
-    "homepage_message": " the message itself ",
+    "message_text": " the message itself ",
     "airdate": "only show the message on this date, MM/DD/YYYY",
     "air_date": True or False only recommend on the date above,
 }
@@ -20,21 +20,21 @@ Here’s a example with 3 messages:
   {
     "id": 0,
     "enabled": true,
-    "homepage_message": "message 0",
+    "message_text": "message 0",
     "airdate": "",
     "air_date": false
   },
   {
     "id": 1,
     "enabled": true,
-    "homepage_message": "message1",
+    "message_text": "message1",
     "airdate": "",
     "air_date": false
   },
   {
     "id": 2,
     "enabled": true,
-    "homepage_message": "message2",
+    "message_text": "message2",
     "airdate": "12/25/2020",
     "air_date": true
   }
@@ -50,21 +50,21 @@ const json = [
   {
     "id": 0,
     "enabled": true,
-    "homepage_message": "message 0",
+    "message_text": "message 0",
     "airdate": "",
     "air_date": false
   },
   {
     "id": 1,
     "enabled": true,
-    "homepage_message": "message1",
+    "message_text": "message1",
     "airdate": "",
     "air_date": false
   },
   {
     "id": 2,
     "enabled": true,
-    "homepage_message": "message2",
+    "message_text": "message2",
     "airdate": "12/25/2020",
     "air_date": true
   }
@@ -84,4 +84,3 @@ The date is captured from the users computer and compared to the one in the json
 
 ## Tests
 Run NPM test.
-
