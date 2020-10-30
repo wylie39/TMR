@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/wylie39/TMR#readme",
   "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.0"
+    "chai": "latest",
+    "mocha": "latest"
   }
 }
