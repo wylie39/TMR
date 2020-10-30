@@ -80,3 +80,5 @@ This will recommend one of the messages and log it to the console.
 
 If no messages can be recommend it will return null
 
+the date is captured from the users computer and compared to the one is the json with out and time-zone checking.
+
