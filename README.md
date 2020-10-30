@@ -46,7 +46,7 @@ Here’s a example with 3 messages:
 
 Here’s a full example:
 ```
-const tmr = require('tmr');
+const tmr = require('@wylie39/tmr');
 
 
 const json = [
