@@ -1,6 +1,6 @@
 {
   "name": "@wylie39/tmr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TMR or Tiny Message Recommender is a small package for recommending text from a json file.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "url": "https://github.com/wylie39/TMR/issues"
   },
   "homepage": "https://github.com/wylie39/TMR#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "chai": "latest",
     "mocha": "latest"
   }
