@@ -1,6 +1,7 @@
 # Tiny-Message-Recommender
 TMR or Tiny Message Recommender is a small package for recommending text from a json file.
 
+[![NPM](https://nodei.co/npm/@wylie39/tmr.png)](https://npmjs.org/package/@wylie39/tmr)
 
 ## How to
 
