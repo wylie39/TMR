@@ -1,39 +1,40 @@
 exports.recommend = function(json) {
+  var date = new Date();
   let message
-  let nomessage;
-  let count = 0;
+  var array = json.sort()
+  var enabled_messages = array.filter(o => o.enabled === true);
 
-  var array = json.sort(() => Math.random() - 0.5)
-
-  function getmessage() {
-    if (count >= array.length) {
-      nomessage = true
-      return;
-    }
-    else {
-      message = array[count]
-      if (message.enabled == false) {
-        count++
-        getmessage()
-      }
-      if (message.air_date == true) {
-        if (message.airdate != new Date().toLocaleDateString()) {
-          count++
-          getmessage()
-        }
-      }
-    }
+  function nomessage() {
+    var nodate_messages = enabled_messages.filter(o => o.air_date != true);
+    return nodate_messages[Math.floor(Math.random() * nodate_messages.length)].message_text;
   }
 
 
+  if (enabled_messages.length) {
+    var date_messages = enabled_messages.filter(o => o.air_date === true);
+    if (date_messages.length) {
+      var todays_messages = enabled_messages.filter(o => o.airdate === date.toLocaleDateString("en", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }));
+      if (todays_messages.length) {
+        return todays_messages[Math.floor(Math.random() * todays_messages.length)].message_text;
 
-  getmessage()
-
-  if (nomessage == true) {
-    return;
+      }else {
+        return nomessage();
+      }
+      if (date_messages.length > 0) {
+        console.log(date_messages);
+      } else {
+        return nomessage();
+      }
+    } else {
+      return nomessage();
     }
-  else {
-    return message.message_text;
-
+  } else {
+    throw new Error("No messages");
   }
+
+
 }

@@ -82,7 +82,11 @@ This will recommend one of the messages and log it to the console.
 
 ## Behaviors
 
-If no messages can be recommend it will return null
+If no messages can be recommend it will throw an Error.
+
+If there is a message with a date it will be the only message recommend on that day.
+
+If multiple message have the same date it will pick on at random.
 
 The date is captured from the users computer and compared to the one in the json without time-zone checking.
 
