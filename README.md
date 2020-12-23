@@ -1,3 +1,31 @@
+
+```                                                                          
+                                                                          
+TTTTTTTTTTTTTTTTTTTTTTTMMMMMMMM               MMMMMMMMRRRRRRRRRRRRRRRRR   
+T:::::::::::::::::::::TM:::::::M             M:::::::MR::::::::::::::::R  
+T:::::::::::::::::::::TM::::::::M           M::::::::MR::::::RRRRRR:::::R 
+T:::::TT:::::::TT:::::TM:::::::::M         M:::::::::MRR:::::R     R:::::R
+TTTTTT  T:::::T  TTTTTTM::::::::::M       M::::::::::M  R::::R     R:::::R
+        T:::::T        M:::::::::::M     M:::::::::::M  R::::R     R:::::R
+        T:::::T        M:::::::M::::M   M::::M:::::::M  R::::RRRRRR:::::R 
+        T:::::T        M::::::M M::::M M::::M M::::::M  R:::::::::::::RR  
+        T:::::T        M::::::M  M::::M::::M  M::::::M  R::::RRRRRR:::::R 
+        T:::::T        M::::::M   M:::::::M   M::::::M  R::::R     R:::::R
+        T:::::T        M::::::M    M:::::M    M::::::M  R::::R     R:::::R
+        T:::::T        M::::::M     MMMMM     M::::::M  R::::R     R:::::R
+      TT:::::::TT      M::::::M               M::::::MRR:::::R     R:::::R
+      T:::::::::T      M::::::M               M::::::MR::::::R     R:::::R
+      T:::::::::T      M::::::M               M::::::MR::::::R     R:::::R
+      TTTTTTTTTTT      MMMMMMMM               MMMMMMMMRRRRRRRR     RRRRRRR
+                                                                          
+                                                                          
+   ```                                                                       
+                                                                          
+                                                                          
+                                                                          
+                                                            
+                                                                       
+
 # Tiny-Message-Recommender
 TMR or Tiny Message Recommender is a small package for recommending text from a json file.
 
