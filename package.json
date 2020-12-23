@@ -1,6 +1,6 @@
 {
   "name": "@wylie39/tmr",
-  "version": "1.0.4",
+  "version": "1.2.0",
   "description": "TMR or Tiny Message Recommender is a small package for recommending text from a json file.",
   "main": "index.js",
   "scripts": {
