@@ -4,29 +4,29 @@ const json = [
   {
     "id": 0,
     "enabled": false,
-    "message_text": "message0",
-    "airdate": "",
-    "air_date": false
+    "message_text": "message0withdate",
+    "airdate": "12/18/2020",
+    "air_date": true
   },
   {
     "id": 1,
-    "enabled": false,
+    "enabled": true,
     "message_text": "message1",
     "airdate": "",
     "air_date": false
   },
   {
     "id": 2,
-    "enabled": true,
+    "enabled": false,
     "message_text": "message2",
     "airdate": "12/25/2020",
     "air_date": false
   },{
     "id": 3,
-    "enabled": false,
-    "message_text": "message3",
-    "airdate": "",
-    "air_date": false
+    "enabled": true,
+    "message_text": "message3today",
+    "airdate": "12/18/2020",
+    "air_date": true
   },{
     "id": 4,
     "enabled": false,
@@ -35,7 +35,7 @@ const json = [
     "air_date": false
   },{
     "id": 5,
-    "enabled": true,
+    "enabled": false,
     "message_text": "message5",
     "airdate": "11/2/2020",
     "air_date": true
