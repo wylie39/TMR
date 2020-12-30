@@ -46,6 +46,50 @@ describe("Tiny Message Recommender", function() {
     const message = tmr.recommend(json);
     expect(message).to.equal("message2");
   });
+  it("Recommend one message with one null date", function() {
+    const json = [{
+        "id": 0,
+        "enabled": false,
+        "message_text": "message0",
+        "airdate": "",
+        "air_date": false
+      },
+      {
+        "id": 1,
+        "enabled": false,
+        "message_text": "message1",
+        "airdate": "",
+        "air_date": false
+      },
+      {
+        "id": 2,
+        "enabled": true,
+        "message_text": "message2",
+        "airdate": "12/25/2020",
+        "air_date": false
+      }, {
+        "id": 3,
+        "enabled": true,
+        "message_text": "message3",
+        "airdate": "",
+        "air_date": true
+      }, {
+        "id": 4,
+        "enabled": false,
+        "message_text": "message4",
+        "airdate": "10/30/2020",
+        "air_date": false
+      }, {
+        "id": 5,
+        "enabled": false,
+        "message_text": "message5",
+        "airdate": "",
+        "air_date": false
+      }
+    ]
+    const message = tmr.recommend(json);
+    expect(message).to.equal("message2");
+  });
   it("Recommend no messages", function() {
     const json = [{
         "id": 0,
@@ -134,6 +178,50 @@ describe("Tiny Message Recommender", function() {
     ]
     const message = tmr.recommend(json);
     expect(message).to.equal("message4");
+  });
+  it("Recommend two message for today", function() {
+    const json = [{
+        "id": 0,
+        "enabled": false,
+        "message_text": "message0",
+        "airdate": "",
+        "air_date": false
+      },
+      {
+        "id": 1,
+        "enabled": false,
+        "message_text": "message1",
+        "airdate": "",
+        "air_date": false
+      },
+      {
+        "id": 2,
+        "enabled": false,
+        "message_text": "message2",
+        "airdate": "12/25/2020",
+        "air_date": false
+      }, {
+        "id": 3,
+        "enabled": false,
+        "message_text": "message3",
+        "airdate": "",
+        "air_date": false
+      }, {
+        "id": 4,
+        "enabled": true,
+        "message_text": "message4",
+        "airdate": new Date().toLocaleDateString(),
+        "air_date": true
+      }, {
+        "id": 5,
+        "enabled": true,
+        "message_text": "message5",
+        "airdate": new Date().toLocaleDateString(),
+        "air_date": true
+      }
+    ]
+    const message = tmr.recommend(json);
+    expect(message).to.oneOf(["message4", "message5"]);
   });
   it("Recommend 3 messages", function() {
     const json = [{
