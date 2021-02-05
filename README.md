@@ -110,11 +110,10 @@ This will recommend one of the messages and log it to the console.
 
 ## Behaviors
 
-If no messages can be recommend it will throw an Error.
-
-If there is a message with a date it will be the only message recommend on that day.
-
-If multiple message have the same date it will pick on at random.
+If a message has a date and is enabled it will get recommend first
+If there are multiple dates it will pick one at random
+If there are no messages with dates it will use one that has no date and is enabled
+if there no enabled messages it will throw an error
 
 The date is captured from the users computer and compared to the one in the json without time-zone checking.
 
